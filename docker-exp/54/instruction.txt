@@ -1,0 +1,19 @@
+54.	Create a Docker image of simple web application from using HTTP web server at port 5000 in host.
+
+1.Create a Python file named app.py for the HTTP server.
+    touch app.py
+
+2  write app.py
+3. write DockerFile
+
+5.docker build -t 54 .
+6.docker run -d -p 5000:5000 --name 54 54
+
+//if the port is already in Use
+docker ps
+
+stop the previous container
+docker stop <container_id>/<container_name>
+
+restart the current container
+docker restart 54

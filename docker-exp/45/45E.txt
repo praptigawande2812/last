@@ -1,0 +1,23 @@
+45.	Create a web application with simple web page containing login details and create a docker image of the application.(Use Apache Web server)
+46.	Run the Docker container from recently created image and run the container at port number 80 in host system.
+
+ Step 1: Create the HTML login page
+      Create a file named `index.html`and `welcome.html` with the following content:
+
+ Step 2: Create a Dockerfile
+        Create a file named `Dockerfile` with the following content:
+
+Step 3: Build the Docker image
+
+    docker build -t mywebapp .     
+
+Step 4: Run the Docker container
+After the image is built, you can run the container with the following command:
+
+    docker run -d -p 80:80 --name mywebapp-container mywebapp
+
+------------------------------------------------
+go to http://localhost/
+
+
+

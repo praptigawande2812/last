@@ -1,0 +1,16 @@
+30 :  Write  a C program to create singly linked list and containerize it.
+
+cd "30 Tough"
+Step 1:  create file named linkedlist.c 
+
+Step 2 : Create a dockerfile ,name it ‘Dockerfile’ 
+
+Step 3 : Build the docker  image 
+Command :    docker build -t linkedlist-app .
+
+Step 4 : Run the docker container 
+Commands  : docker run -it --name linkedlist-app-cont linkedlist-app
+
+
+
+

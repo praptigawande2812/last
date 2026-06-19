@@ -1,0 +1,21 @@
+47.	Write a python program to perform arithmetic operations and create Docker image accordingly.
+      Run the Docker container with created image .
+
+
+Step 1: Write the Python Program
+arithmetic_operations.py
+
+Step 2: Create a Dockerfile
+Dockerfile
+
+Step 3: Create the Docker Image
+# Build the Docker image
+docker build -t arithmetic-operations .
+
+# Verify the image is created
+docker images
+
+Step 4: Run the Docker Container
+
+# Run the Docker container
+docker run -it --name arithmetic-operations-cont arithmetic-operations

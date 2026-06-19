@@ -1,0 +1,35 @@
+docker --version
+
+If Docker is not installed:
+sudo apt update
+sudo apt install docker.io -y
+
+Start Docker:
+sudo systemctl start docker
+sudo systemctl enable docker
+
+Verify:
+sudo docker run hello-world
+
+If you see:
+Hello from Docker!
+then Docker is working.
+
+//Make Docker work without sudo (recommended)
+sudo usermod -aG docker $USER
+newgrp docker
+
+Now test without sudo.
+docker run hello-world
+
+
+
+//running containers
+docker ps 
+
+//first stop and then remove
+docker stop <container_id>/<container_name>
+docker rm <container_name>
+
+//Restart container
+docker restart <container_id>
