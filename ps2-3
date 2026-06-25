@@ -1,0 +1,175 @@
+Practical No. 2 & 3
+Demonstrate to use of Version Control System (Git offline and connect to github account).
+Create multiple users and usage with team leader role and coder roles.
+Demonstrate code pull and push, fork (branching) amongst the users
+Compare it with hg. (on answer sheet)
+ 
+Demonstrate to use of Version Control System (Git offline and connect to github account).
+Create multiple users and usage with team leader role and coder roles.
+Demonstrate code pull and push, fork (branching) amongst the users, code merge, code diff amongst the users.
+Compare git with gitea. (on answer sheet)
+ 
+
+Procedure
+Step 1: Create Repository on GitHub
+Create a repository named:
+test
+Copy the repository URL.
+
+Step 2: Clone Repository
+git clone https://github.com/username/test.git
+
+cd test
+
+
+Step 3: Team Leader Work
+echo "Project created by Team Leader" > leader.txt
+
+git add .
+git commit -m "Initial commit by Team Leader"
+
+git push origin main
+
+
+Step 4: Create Branch for Coder1
+git checkout -b coder1
+
+echo "Feature developed by coder1" > coder1.txt
+
+git add .
+git commit -m "Coder1 work"
+
+git push origin coder1
+
+
+Step 5: Create Branch for Coder2
+git checkout main
+
+git checkout -b coder2
+
+echo "Feature developed by coder2" > coder2.txt
+
+git add .
+git commit -m "Coder2 work"
+
+git push origin coder2
+
+
+Step 6: Demonstrate Pull
+git checkout main
+
+git pull origin main
+
+
+Step 7: Display Branches
+git branch
+
+
+Step 8: Demonstrate Push
+echo "Final update by Team Leader" >> leader.txt
+
+git add .
+git commit -m "Final update"
+
+git push origin main
+
+
+
+Git
+Mercurial (HG)
+Developed by Linus Torvalds
+Developed by Matt Mackall
+Distributed Version Control System (DVCS)
+Distributed Version Control System (DVCS)
+Most widely used VCS worldwide
+Less widely used
+Used by GitHub
+Not natively used by GitHub
+Faster for large projects
+Good performance but less optimized for huge projects
+Large open-source community
+Smaller community
+Powerful branching and merging
+Simpler branching and merging
+More commands and flexibility
+Easier to learn
+Supported by many DevOps tools
+Limited tool integration compared to Git
+Industry standard for software development
+Used in fewer organizations
+
+
+ 
+
+
+
+
+
+
+
+Practical No.3:
+
+Step 6: Demonstrate Diff
+Compare main and coder1:
+git diff main coder1
+Compare coder1 and coder2:
+git diff coder1 coder2
+
+Step 7: Merge coder1
+git checkout main
+git merge coder1 -m "Merged coder1 into main"
+
+Step 8: Merge coder2
+git merge coder2 -m "Merged coder2 into main"
+
+Step 9: Push Merged Result
+git push origin main
+
+Step 10: Show Commit History
+git log --oneline --graph --all
+
+Step 11: Verify Files
+dir
+Files present:
+leader.txt
+coder1.txt
+Coder2.txt
+
+
+If you're inside Vim
+Press:
+Esc
+Type:
+:wq
+Press:
+Enter
+This means:
+w = write/save
+q = quit
+Git will complete the merge.
+
+Git
+Gitea
+Version Control System (VCS)
+Self-hosted Git repository management platform
+Used to track source code changes
+Used to host and manage Git repositories
+Command-line based tool
+Web-based interface
+Developed by Linus Torvalds
+Developed by the Gitea Project
+Performs commit, merge, branch, diff operations
+Provides UI for repositories, issues, pull requests, and users
+Can work completely offline
+Usually runs as a server
+Core version control technology
+Uses Git internally
+No repository hosting features
+Provides repository hosting features
+No user management interface
+Supports user and team management
+No built-in issue tracking
+Includes issue tracking and project management features
+
+
+
