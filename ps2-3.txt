@@ -20,7 +20,8 @@ Step 2: Clone Repository
 git clone https://github.com/username/test.git
 
 cd test
-
+git config --global user.name "Prapti Gawande"
+git config --global user.email "prapting2812@gmail.com"
 
 Step 3: Team Leader Work
 echo "Project created by Team Leader" > leader.txt
@@ -31,7 +32,7 @@ git commit -m "Initial commit by Team Leader"
 git push origin main
 If authentication fails
 username: praptigawande2812
-password/pat: go to github->profile icon->settings->devloper settings->PAT-> generate token(classic)
+password is PAT: go to github->profile icon->settings->devloper settings->PAT-> generate token(classic)
 use this for authentication
 
 
