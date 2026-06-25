@@ -31,7 +31,7 @@ git commit -m "Initial commit by Team Leader"
 git push origin main
 If authentication fails
 username: praptigawande2812
-password/pat: go to github->profile->settings->devloper settings->PAT-> generate token(classic)
+password/pat: go to github->profile icon->settings->devloper settings->PAT-> generate token(classic)
 use this for authentication
 
 
