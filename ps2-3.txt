@@ -30,7 +30,9 @@ git commit -m "Initial commit by Team Leader"
 
 git push origin main
 If authentication fails
-pat: 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
+username: praptigawande2812
+password/pat: go to github->profile->settings->devloper settings->PAT-> generate token(classic)
+use this for authentication
 
 
 Step 4: Create Branch for Coder1
