@@ -29,6 +29,8 @@ git add .
 git commit -m "Initial commit by Team Leader"
 
 git push origin main
+If authentication fails
+pat: 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
 
 
 Step 4: Create Branch for Coder1
