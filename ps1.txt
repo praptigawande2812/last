@@ -47,7 +47,7 @@ git commit -m "Coder1 update"
 
 Step 5: Create Branch for Coder2
 Switch back to main:
-git checkout main
+git checkout main/master
 
 Create branch:
 git branch coder2
@@ -78,7 +78,7 @@ This command displays the difference between coder1 and coder2 branches.
 
 Step 8: Merge Branches
 Switch to main branch:
-git checkout main
+git checkout main/master
 
 Merge coder1:
 git merge coder1
