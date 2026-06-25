@@ -4,16 +4,17 @@ If Docker is not installed:
 sudo apt update
 sudo apt install docker.io -y
 
-Start Docker:
+no need -----
+Start Docker: 
 sudo systemctl start docker
 sudo systemctl enable docker
 
 Verify:
 sudo docker run hello-world
-
 If you see:
 Hello from Docker!
 then Docker is working.
+-------
 
 //Make Docker work without sudo (recommended)
 sudo usermod -aG docker $USER
